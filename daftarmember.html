@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Toko Online Perhiasan Juwellaa</title>
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar section-content">
+    <a href="#" class="nav-logo">
+        <h2 class="logo-text">Juwellaa✨</h2>
+    </a>
+    <ul class="nav-menu">
+        <button id="menu-close-button" class="fas fa-times"></button>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link">Beranda</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Tentang Kami</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Koleksi</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Testimoni Pelanggan</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Daftar Member</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Hubungi Kami</a>
+        </li>
+    </ul>
+
+    <button id="menu-open-button" class="fas fa-bars"></button>
+</nav>
+    </header>
+
+    <main>
+        <!-- Daftar Member -->
+        <section class="daftarmember-section">
+            <h3 class="section-title">Daftar Member</h3>
+            <div class="section-content">
+                <form action="#" class="daftarmember-form">
+                <table>
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td><input type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td><input type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td>Nomor Telepon</td>
+                        <td><input type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td><textarea required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td><input type="date" required></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td><input type="radio" name="jk"> Laki-laki
+                            <input type="radio" name="jk"> Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Preferensi Komunikasi</td>
+                        <td><select>
+                            <option>E-mail</option>
+                            <option>WhatsApp</option>
+                            <option>SMS</option>
+                            </select>
+                        </td>
+                    <tr>
+                        <td>Langganan Newsletter</td>
+                        <td><input type="checkbox" name="ln"> Saya ingin menerima promo dan informasi terbaru.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kata Sandi</td>
+                        <td><input type="password" required></td>
+                    </tr>
+                    <tr>
+                        <td>Konfirmasi Kata Sandi</td>
+                        <td><input type="password" required></td>
+                    </tr>
+                    <tr>
+                        <td>Persetujuan</td>
+                        <td><input type="checkbox" name="p" required> Saya setuju dengan syarat dan ketentuan yang berlaku. <br>
+                            <input type="checkbox" name="p" required> Saya setuju dengan kebijakan privasi.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="submit-button">Kirim</button>
+                        </td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer-selection" id="beranda">
+            <div class="section-content">
+                <p class="copyright-text">© 2025 Juwellaa</p>
+
+                <div class="social-link-list">
+                    <a href="#" class="social link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social link"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Kebijakan Privasi</a>
+                    <span class="separator"> | </span>
+                    <a href="#" class="policy-link">Kebijakan Pengembalian Dana</a>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

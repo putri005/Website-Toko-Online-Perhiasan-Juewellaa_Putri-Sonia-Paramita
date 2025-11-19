@@ -1,0 +1,776 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Playfair";
+}
+
+:root{
+    --white-color: #FFFFFF;
+    --dark-blue-color: #3B5C6D;
+    --primary-color: #4f7a8f;
+    --secondary-color: #DAA787;
+    --light-color: #DDE8EC;
+    --medium-color: #6D9CAF;
+
+    --font-size-s: 10.8pt;
+    --font-size-n: 12pt;
+    --font-size-m: 13.44pt;
+    --font-size-l: 18pt;
+    --font-size-xl: 24pt;
+    --font-size-xxl: 27.6pt
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    --site-max-width: 1300px
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img {
+    width: 100%;
+}
+
+.section-content {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+
+.section-title {
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
+}
+
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--primary-color);
+    padding: 0 20px;
+}
+
+header .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.navbar .nav-logo .logo-text {
+    color: var(--white-color);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-menu .nav-link {
+    padding: 10px 18px;
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.navbar :where(#menu-close-button, #menu-open-button) {
+    display: none;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.hero-section {
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.hero-section .section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
+}
+
+.hero-section .hero-details .title {
+    font-size: var(--font-size-xxl);
+    color: var(--secondary-color);
+    font-family: "Playfair", sans-serif;
+}
+
+.hero-section .hero-details .subtitle {
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.hero-section .hero-details .description {
+    max-width: 70%;
+    margin: 24px 0 40px;
+    font-size: var(--font-size-m);
+}
+
+.hero-section .hero-details .buttons {
+    display: flex;
+    gap: 23px;
+}
+
+.hero-section .hero-details .button {
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    background: var(--secondary-color);
+    font-weight: font var(--font-weight-medium);
+    transition: 0.3s ease;
+}
+
+.hero-section .hero-details .button:hover,
+.hero-section .hero-details .hubungi-kami {
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background: transparent;
+}
+
+.hero-section .hero-details .hubungi-kami:hover {
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+}
+
+.hero-section .hero-image-wrapper {
+    max-width: 500px;
+    margin-right: 30px;
+}
+
+.tentangkami-section {
+    padding: 120px 0;
+    background: var(--light-color);
+}
+
+.tentangkami-section .section-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tentangkami-section .tentangkami-image-wrapper .tentangkami-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+
+.tentangkami-section .tentangkami-details .section-title {
+    padding: 0;
+}
+
+.tentangkami-section .tentangkami-details {
+    max-width: 50%;
+}
+
+.tentangkami-section .tentangkami-details .text {
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+}
+
+.tentangkami-section .social-link-list {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.tentangkami-section .social-link-list .social-link {
+    color: var(--primary-color);
+    font-size: var(--font-size-l);
+    transition: 0.2s ease;
+}
+
+.tentangkami-section .social-link-list .social-link:hover {
+    color: var(--secondary-color);
+}
+
+.koleksi-section {
+    color: var(--white-color);
+    background: var(--dark-blue-color);
+    padding: 50px 0 100px;
+}
+
+.koleksi-section .koleksi-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.koleksi-section .koleksi-list .koleksi-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% / 3 - 110px);
+}
+
+.koleksi-section .koleksi-list .koleksi-item .koleksi-image {
+    max-width: 83%;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.koleksi-section .koleksi-list .koleksi-item .name {
+    margin: 12px 0;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+}
+
+.koleksi-section .koleksi-list .koleksi-item .text {
+    font-size: var(--font-size-m);
+}
+
+.testimonipelanggan-section {
+    padding: 50px 0 100px;
+    background: var(--light-color);
+}
+
+.testimonipelanggan-section .slider-wrapper {
+    overflow: hidden;
+    margin: 0 60px 50px;
+}
+
+.testimonipelanggan-section .testimonipelanggan {
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonipelanggan-section .testimonipelanggan .user-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    border-radius: var(--border-radius-circle);
+}
+
+.testimonipelanggan-section .testimonipelanggan .name {
+    margin-bottom: 16px;
+    font-size: var(--font-size-m);
+}
+
+.testimonipelanggan-section .testimonipelanggan .feedback {
+    line-height: 25px;
+}
+
+.testimonipelanggan-section .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: var(--secondary-color);
+}
+
+.testimonipelanggan-section .swiper-slide-button {
+    margin-top: -50px;
+    color: var(--secondary-color);
+    transition: 0.3s ease;
+}
+
+.testimonipelanggan-section .swiper-slide-button:hover {
+    color: var(--primary-color);
+}
+
+.hubungikami-section {
+    padding: 50px 0 100px;
+    background: var(--light-color);
+}
+
+.hubungikami-section .section-content {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: var(--site-max-width);
+}
+
+.hubungikami-section .hubungikami-info-list {
+    flex: 0 0 320px;
+    min-width: 220px;
+}
+
+.hubungikami-section .hubungikami-info-list .hubungikami-info {
+    display: flex;
+    gap: 12px;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.hubungikami-section .hubungikami-info-list .hubungikami-info i {
+    font-size: var(--font-size-m);
+}
+
+.hubungikami-section .hubungikami-form .form.input {
+    width: 100%;
+    height: 50px;
+    padding: 0 12px;
+    outline: none;
+    margin-bottom: 16px;
+    background: var(--white-color);
+    border-radius: var(--border-radius-s);
+    border: 1px solid var(--medium-color);
+}
+
+.hubungikami-section .hubungikami-form {
+    flex: 1 1 480px;
+    min-width: 280px;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hubungikami-section .hubungikami-form input,
+.hubungikami-section .hubungikami-form textarea,
+.hubungikami-section .hubungikami-form .form-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 12px;
+    height: 50px;
+    outline: none;
+    background: var(--white-color);
+    border-radius: var(--border-radius-s);
+    border: 1px solid var(--medium-color);
+    display: block;
+    margin: 0;
+}
+
+.hubungikami-section .hubungikami-form textarea {
+    height: 120px;
+    padding: 12px;
+    resize: vertical;
+}
+
+.hubungikami-section .hubungikami-form .form.input:focus, .hubungikami-section .hubungikami-form textarea:focus {
+    border-color: var(--secondary-color);
+}
+
+.hubungikami-section .hubungikami-form textarea.form.input {
+    height: 100px;
+    padding: 12px;
+    resize: vertical;
+}
+
+.hubungikami-section .hubungikami-form .submit-button {
+    padding: 8px 18px;
+    height: auto;
+    min-width: 140px;
+    width: auto;
+    box-sizing: border-box;
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-medium);
+    background: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    border: 1px solid var(--primary-color);
+    transition: 0.3s ease;
+    align-self: flex-start;
+    margin-top: 8px;
+}
+
+.hubungikami-section .hubungikami-form .submit-button:hover {
+    color: var(--primary-color);
+    background: transparent;
+}
+
+.daftarmember-section {
+    padding: 48px 20px;
+    background: var(--light-color);
+    color: var(--dark-blue-color);
+}
+
+.daftarmember-section .section-title {
+    margin-bottom: 18px;
+    font-size: var(--font-size-xl);
+    color: var(--dark-blue-color);
+    text-transform: none;
+}
+
+.daftarmember-section .section-content {
+    display: flex;
+    justify-content: center;
+}
+
+.daftarmember-section table {
+    width: 100%;
+    max-width: 720px;
+    background: var(--white-color);
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    box-sizing: border-box;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.daftarmember-section table tr {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.daftarmember-section table td:first-child {
+    flex: 0 0 220px;
+    width: 220px;
+    padding: 8px 12px;
+    font-weight: 600;
+    color: var(--dark-blue-color);
+    white-space: nowrap;
+}
+
+.daftarmember-section table td:last-child {
+    flex: 1 1 auto;
+    padding: 8px 12px;
+}
+
+.daftarmember-section input[type="text"],
+.daftarmember-section input[type="email"],
+.daftarmember-section input[type="tel"],
+.daftarmember-section input[type="date"],
+.daftarmember-section input[type="password"],
+.daftarmember-section textarea,
+.daftarmember-section select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: var(--border-radius-s);
+    border: 1px solid var(--medium-color);
+    box-sizing: border-box;
+    background: #fff;
+    font-size: var(--font-size-n);
+    color: var(--dark-blue-color);
+    display: block;
+}
+
+.daftarmember-section textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.daftarmember-section table td:last-child input[type="radio"],
+.daftarmember-section table td:last-child input[type="checkbox"] {
+    margin-right: 8px;
+    transform: translateY(1px);
+}
+
+.daftarmember-section .submit-button,
+.daftarmember-section input[type="submit"],
+.daftarmember-section input[type="button"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    min-width: 120px;
+    width: auto;
+    color: var(--white-color);
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius-m);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.daftarmember-section table tr:last-child {
+    justify-content: flex-end;
+}
+
+.daftarmember-section .submit-button:hover,
+.daftarmember-section input[type="submit"]:hover {
+    background: transparent;
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+}
+
+.footer-selection {
+    background: var(--light-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-selection .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-selection .copyright-text {
+    font-size: var(--font-size-n);
+    color: var(--dark-blue-color);
+}
+
+.footer-selection .social-link-list {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-selection .policy-text {
+    font-size: var(--font-size-s);
+    color: var(--medium-color);
+}
+
+.footer-selection .policy-link {
+    color: var(--dark-blue-color);
+    text-decoration: none;
+}
+
+.footer-selection .policy-link:hover {
+    text-decoration: underline;
+}
+
+.footer-selection .separator {
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .koleksi-section .koleksi-list {
+        gap: 60px;
+    }
+
+    .koleksi-section .koleksi-list .koleksi-item {
+        width: calc(100% / 3 - 60px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --font-size-m: 12pt;
+        --font-size-l: 15.6pt;
+        --font-size-xl: 18pt;
+        --font-size-xxl: 21.6pt
+    }
+
+    body.show-mobile-menu header::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar :where(#menu-close-button, #menu-open-button) {
+        display: block;
+        font-size: var(--font-size-l)
+    }
+
+    .navbar #menu-close-button {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .navbar #menu-open-button {
+        color: var(--white-color);
+    }
+
+    .navbar .nav-menu {
+        display: block;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        background: var(--white-color);
+        transition: left 0.2s ease;
+    }
+
+    body.show-mobile-menu .navbar .nav-menu {
+        left: 0;
+    }
+
+    .navbar .nav-menu .nav-link {
+        color: var(--dark-blue-color);
+        display: block;
+        margin-top: 17px;
+        font-size: var(--font-size-l);
+    }
+
+    .hero-section .section-content {
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        min-height: unset;
+    }
+
+    .hero-section .hero-details :is(.subtitle, .description), .tentangkami-section .tentangkami-details .hubungikami-section .hubungikami-form {
+        max-width: 100%;
+    }
+
+    .hero-section .hero-details .buttons {
+        justify-content: center;
+    }
+
+    .hero-section .hero-image-wrapper {
+        width: 100%;
+        max-width: 270px;
+        margin-right: 0;
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section .hero-image {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+    .tentangkami-section .section-content {
+        gap: 70px;
+        flex-direction: column;
+    }
+
+    .tentangkami-section .tentangkami-image-wrapper .tentangkami-image {
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1;
+    }
+
+    .koleksi-section .koleksi-list {
+        gap: 30px;
+    }
+
+    .koleksi-section .koleksi-list .koleksi-item {
+        width: calc(100% / 2 - 30px);
+    }
+
+    .koleksi-section .koleksi-list .koleksi-item .koleksi-image {
+        max-width: 200px;
+    }
+
+    .hubungikami-section .section-content {
+        align-items: stretch;
+        flex-direction: column-reverse;
+    }
+
+    .hubungikami-section .hubungikami-form,
+    .hubungikami-section .hubungikami-info-list {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .koleksi-section .koleksi-list {
+        gap: 60px;
+    }
+
+    .koleksi-section .koleksi-list .koleksi-item {
+        width: 100%;
+    }
+
+    .testimonipelanggan-section .slider-wrapper {
+        margin: 0 0 30px;
+    }
+
+    .testimonipelanggan-section .swiper-slide-button {
+        display: none;
+    }
+
+    .daftarmember-section table {
+        padding: 14px;
+    }
+
+    .daftarmember-section table tr {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .daftarmember-section table td:first-child {
+        width: 100%;
+        flex: 0 0 auto;
+        white-space: normal;
+        padding-bottom: 6px;
+    }
+
+    .daftarmember-section table td:last-child {
+        width: 100%;
+    }
+
+    .daftarmember-section table tr:last-child {
+        justify-content: center;
+    }
+
+    .daftarmember-section .submit-button {
+        width: auto;
+    }
+}
